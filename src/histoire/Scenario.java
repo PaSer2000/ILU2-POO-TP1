@@ -9,12 +9,12 @@ import villagegaulois.Village;
 public class Scenario {
 
 	public static void main(String[] args) {
-		Village village = new Village("le village des irréductibles", 10, 5);
+		Village village = new Village("le village des irrï¿½ductibles", 10, 5);
 		Chef abraracourcix = new Chef("Abraracourcix", 10, village);
 		village.setChef(abraracourcix);
 		Druide druide = new Druide("Panoramix", 2, 5, 10);
-		Gaulois obelix = new Gaulois("Obélix", 25);
-		Gaulois asterix = new Gaulois("Astérix", 8);
+		Gaulois obelix = new Gaulois("Obï¿½lix", 25);
+		Gaulois asterix = new Gaulois("Astï¿½rix", 8);
 		Gaulois assurancetourix = new Gaulois("Assurancetourix", 2);
 		Gaulois bonemine = new Gaulois("Bonemine", 7);
 		
@@ -25,6 +25,8 @@ public class Scenario {
 		village.ajouterHabitant(druide);
 		village.ajouterHabitant(abraracourcix);
 		village.afficherVillageois();
+		
+		System.out.println("Tout ok scÃ©nario");
 
 		System.out.println(village.rechercherVendeursProduit("fleurs"));
 		System.out.println(village.installerVendeur(bonemine, "fleurs", 20));
@@ -33,13 +35,13 @@ public class Scenario {
 		System.out.println(village.installerVendeur(obelix, "menhirs", 2));
 		System.out.println(village.installerVendeur(druide, "fleurs", 10));
 
-//		System.out.println(village.rechercherVendeursProduit("fleurs"));
-//		Etal etalFleur = village.rechercherEtal(bonemine);
-//		System.out.println(etalFleur.acheterProduit(10, abraracourcix));
-//		System.out.println(etalFleur.acheterProduit(15, obelix));
-//		System.out.println(etalFleur.acheterProduit(15, assurancetourix));
-//		System.out.println(village.partirVendeur(bonemine));
-//		System.out.println(village.afficherMarche());
+		System.out.println(village.rechercherVendeursProduit("fleurs"));
+		Etal etalFleur = village.rechercherEtal(bonemine);
+		System.out.println(etalFleur.acheterProduit(10, abraracourcix));
+		System.out.println(etalFleur.acheterProduit(15, obelix));
+		System.out.println(etalFleur.acheterProduit(15, assurancetourix));
+		System.out.println(village.partirVendeur(bonemine));
+		System.out.println(village.afficherMarche());
 	}
 
 }
