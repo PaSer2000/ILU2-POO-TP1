@@ -34,7 +34,6 @@ public class Scenario {
 		System.out.println(village.installerVendeur(assurancetourix, "lyres", 5));
 		System.out.println(village.installerVendeur(obelix, "menhirs", 2));
 		System.out.println(village.installerVendeur(druide, "fleurs", 10));
-
 		System.out.println(village.rechercherVendeursProduit("fleurs"));
 		Etal etalFleur = village.rechercherEtal(bonemine);
 		System.out.println(etalFleur.acheterProduit(10, abraracourcix));
